@@ -1,5 +1,5 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
+@import "tailwindcss";
+@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -23,6 +23,13 @@
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
+  /* Added brand colors: lime green and purple variants */
+  --lime: #62b113;
+  --lime-light: #70ba27;
+  --purple-bright: oklch(0.558 0.288 302.321);
+  --purple-dark: oklch(0.381 0.176 304.987);
+  --purple-blue: oklch(0.546 0.245 262.881);
+  /* End brand colors */
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -59,6 +66,13 @@
   --border: oklch(0.269 0 0);
   --input: oklch(0.269 0 0);
   --ring: oklch(0.439 0 0);
+  /* Brand colors remain the same in dark mode */
+  --lime: #62b113;
+  --lime-light: #70ba27;
+  --purple-bright: oklch(0.558 0.288 302.321);
+  --purple-dark: oklch(0.381 0.176 304.987);
+  --purple-blue: oklch(0.546 0.245 262.881);
+  /* End brand colors */
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -75,8 +89,8 @@
 }
 
 @theme inline {
-  --font-sans: 'Geist', 'Geist Fallback';
-  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --font-sans: "Geist", "Geist Fallback";
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -96,6 +110,13 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  /* Added brand colors to Tailwind theme */
+  --color-lime: var(--lime);
+  --color-lime-light: var(--lime-light);
+  --color-purple-bright: var(--purple-bright);
+  --color-purple-dark: var(--purple-dark);
+  --color-purple-blue: var(--purple-blue);
+  /* End brand colors */
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);

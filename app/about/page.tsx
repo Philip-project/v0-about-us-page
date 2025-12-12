@@ -101,7 +101,9 @@ export default function AboutPage() {
         <div className="mx-auto max-w-5xl">
           <div className="space-y-8">
             <div>
-              <h1 className="text-5xl font-bold tracking-tight sm:text-6xl text-balance">About Our Company</h1>
+              <h1 className="text-5xl font-bold tracking-tight sm:text-6xl text-balance bg-gradient-to-r from-purple-bright to-lime text-transparent bg-clip-text">
+                About Our Company
+              </h1>
               <p className="mt-6 text-xl text-muted-foreground">
                 We're building the future of digital innovation by combining cutting-edge technology with human-centered
                 design.
@@ -126,19 +128,19 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold tracking-tight mb-4">Our Values</h2>
               <ul className="space-y-4 text-lg text-muted-foreground">
                 <li className="flex gap-3">
-                  <span className="text-primary font-bold">→</span>
+                  <span className="text-lime font-bold">→</span>
                   <span>Innovation and creativity in everything we do</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-primary font-bold">→</span>
+                  <span className="text-lime font-bold">→</span>
                   <span>Customer-first approach to problem solving</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-primary font-bold">→</span>
+                  <span className="text-lime font-bold">→</span>
                   <span>Commitment to quality and excellence</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-primary font-bold">→</span>
+                  <span className="text-lime font-bold">→</span>
                   <span>Collaborative and inclusive culture</span>
                 </li>
               </ul>
@@ -202,11 +204,17 @@ export default function AboutPage() {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Join us on our journey to transform the digital landscape. Let's build something extraordinary together.
           </p>
-          <div className="flex justify-center gap-4">
-            <button className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:opacity-90 transition">
+          <div className="flex justify-center gap-4 flex-wrap">
+            <button
+              className="px-8 py-3 bg-lime text-white rounded-lg font-semibold hover:opacity-90 transition shadow-lg hover:shadow-xl"
+              style={{ backgroundColor: "var(--lime)" }}
+            >
               Get in Touch
             </button>
-            <button className="px-8 py-3 border border-border rounded-lg font-semibold hover:bg-muted transition">
+            <button
+              className="px-8 py-3 border-2 rounded-lg font-semibold transition hover:bg-purple-dark/10"
+              style={{ borderColor: "var(--purple-bright)", color: "var(--purple-bright)" }}
+            >
               Learn More
             </button>
           </div>
